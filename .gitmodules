@@ -1,0 +1,3 @@
+[submodule "kicad/cad-libraries"]
+	path = kicad/cad-libraries
+	url = https://github.com/sztsian/cad-libraries
