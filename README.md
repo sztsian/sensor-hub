@@ -17,3 +17,7 @@ The kicad symbol of the button is from [this website](http://smisioto.no-ip.org/
 
 [Tasmota](https://github.com/arendst/Tasmota) fits me well for gathering the sensor information and send it via MQTT. You can either download one from Tasmota, or compile your own for your need.
 The config I use for [TasmoCompiler](https://github.com/benzino77/tasmocompiler) docker based compiler is available as `firmware/tasmota-zigbee-ir-i2c-user_config_override.h` .
+
+The following is the config I use for the first picture.
+
+![Tasmota module config](pic/tasmota-config.png)
