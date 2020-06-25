@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name hm10)(type KiCad)(uri ${KIPRJMOD}/cad-libraries/hm10-kicad/hm10.pretty)(options "")(descr ""))
+  (lib (name zsun-connectors)(type KiCad)(uri ${KIPRJMOD}/cad-libraries/zsun-connectors.pretty)(options "")(descr ""))
+)

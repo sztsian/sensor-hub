@@ -1,4 +1,5 @@
 (sym_lib_table
   (lib (name SBC-relay-5v-rescue)(type Legacy)(uri ${KIPRJMOD}/sensor-hub-rescue.lib)(options "")(descr ""))
-  (lib (name hm10)(type Legacy)(uri /home/zsun/hardware/boards-kicad/packages/hm10/hm10.pretty/hm10.lib)(options "")(descr ""))
+  (lib (name hm10)(type Legacy)(uri ${KIPRJMOD}/cad-libraries/hm10-kicad/hm10.pretty/hm10.lib)(options "")(descr ""))
+  (lib (name zsun-lib)(type Legacy)(uri ${KIPRJMOD}/cad-libraries/zsun-lib.lib)(options "")(descr ""))
 )
