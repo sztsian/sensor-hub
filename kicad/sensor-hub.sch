@@ -471,32 +471,8 @@ Wire Wire Line
 	6000 2450 6150 2450
 Wire Wire Line
 	6150 2550 6000 2550
-$Comp
-L Connector:Conn_01x03_Female J8
-U 1 1 5E616314
-P 9150 1600
-F 0 "J8" H 9042 1275 50  0000 C CNN
-F 1 "IRRecv/Dallas" H 9042 1366 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 9150 1600 50  0001 C CNN
-F 3 "~" H 9150 1600 50  0001 C CNN
-	1    9150 1600
-	-1   0    0    1   
-$EndComp
-Text GLabel 9500 4050 2    50   Input ~ 0
+Text GLabel 10400 6100 2    50   Input ~ 0
 DHT22
-$Comp
-L power:GND #PWR04
-U 1 1 5E619DD4
-P 9350 1600
-F 0 "#PWR04" H 9350 1350 50  0001 C CNN
-F 1 "GND" V 9355 1472 50  0000 R CNN
-F 2 "" H 9350 1600 50  0001 C CNN
-F 3 "" H 9350 1600 50  0001 C CNN
-	1    9350 1600
-	0    -1   -1   0   
-$EndComp
-Text GLabel 9350 1500 2    50   Input ~ 0
-3V3_MCU
 Text GLabel 9350 2050 0    50   Input ~ 0
 3V3_MCU
 Text GLabel 9350 2150 0    50   Input ~ 0
@@ -582,31 +558,18 @@ Text GLabel 10100 2950 2    50   Input ~ 0
 Wire Wire Line
 	9900 2950 9850 2950
 $Comp
-L Connector:Conn_01x03_Female J10
-U 1 1 5E6513B8
-P 9300 4050
-F 0 "J10" H 9192 3725 50  0000 C CNN
-F 1 "DHT22" H 9192 3816 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 9300 4050 50  0001 C CNN
-F 3 "~" H 9300 4050 50  0001 C CNN
-	1    9300 4050
-	-1   0    0    1   
-$EndComp
-$Comp
 L power:GND #PWR06
 U 1 1 5E651EA9
-P 9500 4150
-F 0 "#PWR06" H 9500 3900 50  0001 C CNN
-F 1 "GND" V 9505 4022 50  0000 R CNN
-F 2 "" H 9500 4150 50  0001 C CNN
-F 3 "" H 9500 4150 50  0001 C CNN
-	1    9500 4150
+P 10400 6200
+F 0 "#PWR06" H 10400 5950 50  0001 C CNN
+F 1 "GND" V 10405 6072 50  0000 R CNN
+F 2 "" H 10400 6200 50  0001 C CNN
+F 3 "" H 10400 6200 50  0001 C CNN
+	1    10400 6200
 	0    -1   -1   0   
 $EndComp
-Text GLabel 9500 3950 2    50   Input ~ 0
+Text GLabel 10400 6000 2    50   Input ~ 0
 3V3_MCU
-Text GLabel 9350 1700 2    50   Input ~ 0
-GPIO14
 Text GLabel 9850 2050 2    50   Input ~ 0
 I2C_SDA
 Text GLabel 9850 2150 2    50   Input ~ 0
@@ -651,37 +614,22 @@ F 3 "" H 9650 5200 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector:Conn_01x02_Male J7
-U 1 1 5E6919CC
-P 8050 3850
-F 0 "J7" H 8158 4031 50  0000 C CNN
-F 1 "DallasPullUp" H 8158 3940 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 8050 3850 50  0001 C CNN
-F 3 "~" H 8050 3850 50  0001 C CNN
-	1    8050 3850
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R_Small R9
 U 1 1 5E694A4C
-P 8500 3850
-F 0 "R9" V 8304 3850 50  0000 C CNN
-F 1 "4.7k" V 8395 3850 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8500 3850 50  0001 C CNN
-F 3 "~" H 8500 3850 50  0001 C CNN
-	1    8500 3850
+P 8350 3850
+F 0 "R9" V 8154 3850 50  0000 C CNN
+F 1 "4.7k" V 8245 3850 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8350 3850 50  0001 C CNN
+F 3 "~" H 8350 3850 50  0001 C CNN
+	1    8350 3850
 	0    1    1    0   
 $EndComp
-Text GLabel 8650 3850 2    50   Input ~ 0
+Text GLabel 8500 3850 2    50   Input ~ 0
 3V3_MCU
-Text GLabel 8400 3950 2    50   Input ~ 0
+Text GLabel 7950 3850 0    50   Input ~ 0
 GPIO14
 Wire Wire Line
-	8650 3850 8600 3850
-Wire Wire Line
-	8400 3850 8250 3850
-Wire Wire Line
-	8250 3950 8400 3950
+	8500 3850 8450 3850
 $Comp
 L power:VBUS #PWR0111
 U 1 1 5E6F35AB
@@ -694,10 +642,10 @@ F 3 "" H 9650 5300 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Connector_Generic:Conn_02x05_Odd_Even J9
+L Connector_Generic:Conn_02x05_Odd_Even J10
 U 1 1 5E732AAD
 P 9550 2250
-F 0 "J9" H 9600 2667 50  0000 C CNN
+F 0 "J10" H 9600 2667 50  0000 C CNN
 F 1 "BH1750/Display" H 9600 2576 50  0000 C CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_2x05_P2.54mm_Vertical" H 9550 2250 50  0001 C CNN
 F 3 "~" H 9550 2250 50  0001 C CNN
@@ -717,34 +665,6 @@ Wire Wire Line
 	9850 2950 9800 2950
 Wire Wire Line
 	9500 2950 9400 2950
-$Comp
-L Connector:Conn_01x04_Female J12
-U 1 1 5E7CB6A9
-P 8600 5050
-F 0 "J12" H 8628 5026 50  0000 L CNN
-F 1 "I2C-Si7021" H 8628 4935 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 8600 5050 50  0001 C CNN
-F 3 "~" H 8600 5050 50  0001 C CNN
-	1    8600 5050
-	1    0    0    -1  
-$EndComp
-Text GLabel 8400 5250 0    50   Input ~ 0
-3V3_MCU
-Text GLabel 8400 5150 0    50   Input ~ 0
-I2C_SCL
-Text GLabel 8400 5050 0    50   Input ~ 0
-I2C_SDA
-$Comp
-L power:GND #PWR0112
-U 1 1 5E7CD91A
-P 8400 4950
-F 0 "#PWR0112" H 8400 4700 50  0001 C CNN
-F 1 "GND" V 8405 4822 50  0000 R CNN
-F 2 "" H 8400 4950 50  0001 C CNN
-F 3 "" H 8400 4950 50  0001 C CNN
-	1    8400 4950
-	0    1    1    0   
-$EndComp
 Connection ~ 9500 2950
 Text GLabel 9350 4500 0    50   Input ~ 0
 GPIO2
@@ -919,10 +839,10 @@ GPIO5
 Text GLabel 5650 3850 2    50   Input ~ 0
 3V3_MCU
 $Comp
-L Connector:Conn_01x02_Male J17
+L Connector:Conn_01x02_Male J12
 U 1 1 5ED0D865
 P 5450 3750
-F 0 "J17" H 5350 3700 50  0000 C CNN
+F 0 "J12" H 5350 3700 50  0000 C CNN
 F 1 "CC_PWR" H 5400 3550 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5450 3750 50  0001 C CNN
 F 3 "~" H 5450 3750 50  0001 C CNN
@@ -1126,4 +1046,411 @@ Text Label 6550 1850 0    50   ~ 0
 ZB_07
 Text Label 6050 4350 0    50   ~ 0
 ZB_07
+$Comp
+L Jumper:SolderJumper_2_Open JP2
+U 1 1 5F40C481
+P 8100 3850
+F 0 "JP2" H 8100 4055 50  0000 C CNN
+F 1 "SJ_GPIO14" H 8050 3950 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 8100 3850 50  0001 C CNN
+F 3 "~" H 8100 3850 50  0001 C CNN
+	1    8100 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R1
+U 1 1 5F423C6B
+P 8350 4250
+F 0 "R1" V 8154 4250 50  0000 C CNN
+F 1 "4.7k" V 8245 4250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8350 4250 50  0001 C CNN
+F 3 "~" H 8350 4250 50  0001 C CNN
+	1    8350 4250
+	0    1    1    0   
+$EndComp
+Text GLabel 8500 4250 2    50   Input ~ 0
+3V3_MCU
+Text GLabel 7950 4250 0    50   Input ~ 0
+DHT22
+Wire Wire Line
+	8500 4250 8450 4250
+$Comp
+L Jumper:SolderJumper_2_Open JP3
+U 1 1 5F423C74
+P 8100 4250
+F 0 "JP3" H 8100 4455 50  0000 C CNN
+F 1 "SJ_GPIO12" H 8050 4350 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 8100 4250 50  0001 C CNN
+F 3 "~" H 8100 4250 50  0001 C CNN
+	1    8100 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 5E619DD4
+P 6550 5100
+F 0 "#PWR04" H 6550 4850 50  0001 C CNN
+F 1 "GND" V 6555 4972 50  0000 R CNN
+F 2 "" H 6550 5100 50  0001 C CNN
+F 3 "" H 6550 5100 50  0001 C CNN
+	1    6550 5100
+	0    1    1    0   
+$EndComp
+Text GLabel 6550 5200 0    50   Input ~ 0
+3V3_MCU
+Text GLabel 6550 5000 0    50   Input ~ 0
+GPIO14
+Text GLabel 7050 5200 2    50   Input ~ 0
+3V3_MCU
+Text GLabel 7050 5000 2    50   Input ~ 0
+I2C_SCL
+Text GLabel 7050 4900 2    50   Input ~ 0
+I2C_SDA
+$Comp
+L power:GND #PWR0119
+U 1 1 5F432B1C
+P 7050 5100
+F 0 "#PWR0119" H 7050 4850 50  0001 C CNN
+F 1 "GND" V 7055 4972 50  0000 R CNN
+F 2 "" H 7050 5100 50  0001 C CNN
+F 3 "" H 7050 5100 50  0001 C CNN
+	1    7050 5100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x04_Odd_Even J3
+U 1 1 5F48735B
+P 8300 4950
+F 0 "J3" H 8350 5267 50  0000 C CNN
+F 1 "HDC/Si7021" H 8350 5176 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x04_P2.54mm_Vertical" H 8300 4950 50  0001 C CNN
+F 3 "~" H 8300 4950 50  0001 C CNN
+	1    8300 4950
+	1    0    0    -1  
+$EndComp
+Text GLabel 8600 5150 2    50   Input ~ 0
+3V3_MCU
+Text GLabel 8600 4950 2    50   Input ~ 0
+I2C_SCL
+Text GLabel 8600 5050 2    50   Input ~ 0
+I2C_SDA
+$Comp
+L power:GND #PWR0120
+U 1 1 5F4437FA
+P 8600 4850
+F 0 "#PWR0120" H 8600 4600 50  0001 C CNN
+F 1 "GND" V 8605 4722 50  0000 R CNN
+F 2 "" H 8600 4850 50  0001 C CNN
+F 3 "" H 8600 4850 50  0001 C CNN
+	1    8600 4850
+	0    -1   -1   0   
+$EndComp
+Text GLabel 8100 5150 0    50   Input ~ 0
+3V3_MCU
+Text GLabel 8100 5050 0    50   Input ~ 0
+I2C_SCL
+Text GLabel 8100 4950 0    50   Input ~ 0
+I2C_SDA
+$Comp
+L power:GND #PWR0112
+U 1 1 5E7CD91A
+P 8100 4850
+F 0 "#PWR0112" H 8100 4600 50  0001 C CNN
+F 1 "GND" V 8105 4722 50  0000 R CNN
+F 2 "" H 8100 4850 50  0001 C CNN
+F 3 "" H 8100 4850 50  0001 C CNN
+	1    8100 4850
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x04_Odd_Even J2
+U 1 1 5F42A47E
+P 6750 5000
+F 0 "J2" H 6800 5317 50  0000 C CNN
+F 1 "IO14/SHT" H 6800 5226 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x04_P2.54mm_Vertical" H 6750 5000 50  0001 C CNN
+F 3 "~" H 6750 5000 50  0001 C CNN
+	1    6750 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x04_Odd_Even J4
+U 1 1 5F4CD961
+P 10100 6100
+F 0 "J4" H 10150 6417 50  0000 C CNN
+F 1 "IO12/SHT" H 10150 6326 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x04_P2.54mm_Vertical" H 10100 6100 50  0001 C CNN
+F 3 "~" H 10100 6100 50  0001 C CNN
+	1    10100 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0121
+U 1 1 5F460E9A
+P 9900 6100
+F 0 "#PWR0121" H 9900 5850 50  0001 C CNN
+F 1 "GND" V 9905 5972 50  0000 R CNN
+F 2 "" H 9900 6100 50  0001 C CNN
+F 3 "" H 9900 6100 50  0001 C CNN
+	1    9900 6100
+	0    1    1    0   
+$EndComp
+Text GLabel 9900 6300 0    50   Input ~ 0
+I2C_SDA
+Text GLabel 9900 6200 0    50   Input ~ 0
+I2C_SCL
+Text GLabel 9900 6000 0    50   Input ~ 0
+3V3_MCU
+Text GLabel 4400 6400 2    50   Input ~ 0
+3V3_MCU
+Text GLabel 4400 6500 2    50   Input ~ 0
+I2C_SCL
+Text GLabel 4400 6600 2    50   Input ~ 0
+I2C_SDA
+$Comp
+L power:GND #PWR0122
+U 1 1 5F4453D4
+P 4400 6700
+F 0 "#PWR0122" H 4400 6450 50  0001 C CNN
+F 1 "GND" V 4405 6572 50  0000 R CNN
+F 2 "" H 4400 6700 50  0001 C CNN
+F 3 "" H 4400 6700 50  0001 C CNN
+	1    4400 6700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Conn_01x04_Male J17
+U 1 1 5F458239
+P 4200 6600
+F 0 "J17" H 4172 6482 50  0000 R CNN
+F 1 "Si7021" H 4172 6573 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 4200 6600 50  0001 C CNN
+F 3 "~" H 4200 6600 50  0001 C CNN
+	1    4200 6600
+	1    0    0    1   
+$EndComp
+Text GLabel 6350 6400 0    50   Input ~ 0
+3V3_MCU
+Text GLabel 6350 6600 0    50   Input ~ 0
+I2C_SCL
+Text GLabel 6350 6700 0    50   Input ~ 0
+I2C_SDA
+$Comp
+L power:GND #PWR0123
+U 1 1 5F4509DE
+P 6350 6500
+F 0 "#PWR0123" H 6350 6250 50  0001 C CNN
+F 1 "GND" V 6355 6372 50  0000 R CNN
+F 2 "" H 6350 6500 50  0001 C CNN
+F 3 "" H 6350 6500 50  0001 C CNN
+	1    6350 6500
+	0    1    1    0   
+$EndComp
+Text GLabel 5600 5750 0    50   Input ~ 0
+3V3_MCU
+Text GLabel 5600 5950 0    50   Input ~ 0
+I2C_SCL
+Text GLabel 5600 5850 0    50   Input ~ 0
+I2C_SDA
+$Comp
+L power:GND #PWR0124
+U 1 1 5F48BCBC
+P 5600 5650
+F 0 "#PWR0124" H 5600 5400 50  0001 C CNN
+F 1 "GND" V 5605 5522 50  0000 R CNN
+F 2 "" H 5600 5650 50  0001 C CNN
+F 3 "" H 5600 5650 50  0001 C CNN
+	1    5600 5650
+	0    1    1    0   
+$EndComp
+Text GLabel 5400 6400 2    50   Input ~ 0
+3V3_MCU
+Text GLabel 5400 6600 2    50   Input ~ 0
+I2C_SCL
+Text GLabel 5400 6500 2    50   Input ~ 0
+I2C_SDA
+$Comp
+L power:GND #PWR0125
+U 1 1 5F4B27F1
+P 5400 6700
+F 0 "#PWR0125" H 5400 6450 50  0001 C CNN
+F 1 "GND" V 5405 6572 50  0000 R CNN
+F 2 "" H 5400 6700 50  0001 C CNN
+F 3 "" H 5400 6700 50  0001 C CNN
+	1    5400 6700
+	0    -1   -1   0   
+$EndComp
+Text GLabel 4650 5700 2    50   Input ~ 0
+3V3_MCU
+Text GLabel 4650 5800 2    50   Input ~ 0
+I2C_SCL
+Text GLabel 4650 5900 2    50   Input ~ 0
+I2C_SDA
+$Comp
+L power:GND #PWR0126
+U 1 1 5F4BFA27
+P 4650 6000
+F 0 "#PWR0126" H 4650 5750 50  0001 C CNN
+F 1 "GND" V 4655 5872 50  0000 R CNN
+F 2 "" H 4650 6000 50  0001 C CNN
+F 3 "" H 4650 6000 50  0001 C CNN
+	1    4650 6000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Conn_01x04_Male J7
+U 1 1 5F4BFA3B
+P 4450 5900
+F 0 "J7" H 4422 5782 50  0000 R CNN
+F 1 "Si7021" H 4422 5873 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 4450 5900 50  0001 C CNN
+F 3 "~" H 4450 5900 50  0001 C CNN
+	1    4450 5900
+	1    0    0    1   
+$EndComp
+Text GLabel 6300 5650 0    50   Input ~ 0
+3V3_MCU
+Text GLabel 6300 5850 0    50   Input ~ 0
+I2C_SCL
+Text GLabel 6300 5950 0    50   Input ~ 0
+I2C_SDA
+$Comp
+L power:GND #PWR0127
+U 1 1 5F4BFA48
+P 6300 5750
+F 0 "#PWR0127" H 6300 5500 50  0001 C CNN
+F 1 "GND" V 6305 5622 50  0000 R CNN
+F 2 "" H 6300 5750 50  0001 C CNN
+F 3 "" H 6300 5750 50  0001 C CNN
+	1    6300 5750
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Conn_01x04_Female J19
+U 1 1 5F4D94F8
+P 6550 6600
+F 0 "J19" H 6442 6175 50  0000 C CNN
+F 1 "SHT" H 6442 6266 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 6550 6600 50  0001 C CNN
+F 3 "~" H 6550 6600 50  0001 C CNN
+	1    6550 6600
+	1    0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_01x04_Female J9
+U 1 1 5F4E82DF
+P 6500 5850
+F 0 "J9" H 6392 5425 50  0000 C CNN
+F 1 "SHT" H 6392 5516 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 6500 5850 50  0001 C CNN
+F 3 "~" H 6500 5850 50  0001 C CNN
+	1    6500 5850
+	1    0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_01x04_Female J8
+U 1 1 5F4F218D
+P 5800 5850
+F 0 "J8" H 5692 5425 50  0000 C CNN
+F 1 "HTU21D" H 5692 5516 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 5800 5850 50  0001 C CNN
+F 3 "~" H 5800 5850 50  0001 C CNN
+	1    5800 5850
+	1    0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_01x04_Female J18
+U 1 1 5F4FB42F
+P 5200 6600
+F 0 "J18" H 5400 6450 50  0000 C CNN
+F 1 "HDC1080" H 5400 6600 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 5200 6600 50  0001 C CNN
+F 3 "~" H 5200 6600 50  0001 C CNN
+	1    5200 6600
+	-1   0    0    1   
+$EndComp
+Text GLabel 4450 7150 2    50   Input ~ 0
+3V3_MCU
+Text GLabel 4450 7250 2    50   Input ~ 0
+I2C_SCL
+Text GLabel 4450 7350 2    50   Input ~ 0
+I2C_SDA
+$Comp
+L power:GND #PWR0128
+U 1 1 5F5B5CD6
+P 4450 7450
+F 0 "#PWR0128" H 4450 7200 50  0001 C CNN
+F 1 "GND" V 4455 7322 50  0000 R CNN
+F 2 "" H 4450 7450 50  0001 C CNN
+F 3 "" H 4450 7450 50  0001 C CNN
+	1    4450 7450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Conn_01x04_Male J20
+U 1 1 5F5B5CE0
+P 4250 7350
+F 0 "J20" H 4222 7232 50  0000 R CNN
+F 1 "Si7021" H 4222 7323 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 4250 7350 50  0001 C CNN
+F 3 "~" H 4250 7350 50  0001 C CNN
+	1    4250 7350
+	1    0    0    1   
+$EndComp
+Text GLabel 6400 7150 0    50   Input ~ 0
+3V3_MCU
+Text GLabel 6400 7350 0    50   Input ~ 0
+I2C_SCL
+Text GLabel 6400 7450 0    50   Input ~ 0
+I2C_SDA
+$Comp
+L power:GND #PWR0129
+U 1 1 5F5B5CED
+P 6400 7250
+F 0 "#PWR0129" H 6400 7000 50  0001 C CNN
+F 1 "GND" V 6405 7122 50  0000 R CNN
+F 2 "" H 6400 7250 50  0001 C CNN
+F 3 "" H 6400 7250 50  0001 C CNN
+	1    6400 7250
+	0    1    1    0   
+$EndComp
+Text GLabel 5450 7150 2    50   Input ~ 0
+3V3_MCU
+Text GLabel 5450 7350 2    50   Input ~ 0
+I2C_SCL
+Text GLabel 5450 7250 2    50   Input ~ 0
+I2C_SDA
+$Comp
+L power:GND #PWR0130
+U 1 1 5F5B5CFA
+P 5450 7450
+F 0 "#PWR0130" H 5450 7200 50  0001 C CNN
+F 1 "GND" V 5455 7322 50  0000 R CNN
+F 2 "" H 5450 7450 50  0001 C CNN
+F 3 "" H 5450 7450 50  0001 C CNN
+	1    5450 7450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Conn_01x04_Female J22
+U 1 1 5F5B5D04
+P 6600 7350
+F 0 "J22" H 6492 6925 50  0000 C CNN
+F 1 "SHT" H 6492 7016 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 6600 7350 50  0001 C CNN
+F 3 "~" H 6600 7350 50  0001 C CNN
+	1    6600 7350
+	1    0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_01x04_Female J21
+U 1 1 5F5B5D0E
+P 5250 7350
+F 0 "J21" H 5450 7200 50  0000 C CNN
+F 1 "HDC1080" H 5450 7350 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 5250 7350 50  0001 C CNN
+F 3 "~" H 5250 7350 50  0001 C CNN
+	1    5250 7350
+	-1   0    0    1   
+$EndComp
 $EndSCHEMATC
